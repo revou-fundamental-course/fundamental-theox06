@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Theo</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- ini google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="nav-container">
@@ -13,6 +18,7 @@
         <nav>
             <a href="#home">Home</a>
             <a href="#our-profile">Our Profile</a>
+            <a href="#our-headquarter">Our Headquarter</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#message-us">Message Us</a>
         </nav>
@@ -29,33 +35,75 @@
             <article>
                 <p>Ini adalah website portfolio saya</p>
 
-                <div class="banner-container"></div>
+                <div class="banner-container">
+                    <h1>Welcome to Tristar Holding Group</h1>
+                    <p>giving the best is our priority</p>
+                </div>
             </article>
 
         </section>
         
-        <hr />
+        <br />
 
         <!-- Ini Our Profile Content -->
          <section id="our-profile">
             <header>
                 <h1>Our Profile</h1>
+                <p>we serve IT services such as :</p>
+            </header>
+
+            <article class="profile-content">
+                <div class="profile-item">
+                    <div class="profile-icon service-1"></div>
+                    <p>IT Consultant</p>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-icon service-2"></div>
+                    <p>Web/Software Dev And Engineer</p>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-icon service-3"></div>
+                    <p>Server and Data Center</p>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-icon service-4"></div>
+                    <p>AI Dev and Engineer</p>
+                </div>
+
+                <div class="divider"></div>
+            </article>
+         </section>
+
+         <br />
+
+         <!-- Ini headquarter content -->
+         <section id="our-headquarter">
+            <header>
+                <h1>Our Headquarter</h1>
             </header>
 
             <article class="profile-content">
                 <div class="profile-item">
                     <div class="profile-icon profile-1"></div>
-                    <p>Profile 1</p>
+                    <p>Jakarta</p>
                 </div>
 
                 <div class="profile-item">
                     <div class="profile-icon profile-2"></div>
-                    <p>Profile 2</p>
+                    <p>Bogor</p>
                 </div>
 
                 <div class="profile-item">
                     <div class="profile-icon profile-3"></div>
-                    <p>Profile 3</p>
+                    <p>Bandung</p>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-icon profile-4"></div>
+                    <p>Surabaya</p>
                 </div>
 
                 <div class="divider"></div>
@@ -65,6 +113,23 @@
         <!-- Ini Portfolio Content -->
 
         <!-- Ini Message Us Content -->
+         <section id="message-us">
+            <header>
+                <h1>Message Us</h1>
+            </header>
+
+            <article class="message-us">
+                <label for="">Name</label>
+                <input type="text" name="" id="">
+
+                <label for="">Birthdate</label>
+                <input type="date" name="" id="">
+
+                <label for="">Gender</label>
+                <input type="radio" name="" id="">Man
+                <input type="radio" name="" id="">Woman
+            </article>
+         </section>
     </main>
 
     

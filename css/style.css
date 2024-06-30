@@ -1,8 +1,13 @@
 /* Ini CSS */
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 main {
     padding: 12px;
 }
+
 
 .nav-container {
     display: flex;
@@ -27,12 +32,32 @@ nav>a{
     padding-left: 32px;
     padding-right: 32px;
     border: 1px solid;
+    text-decoration: none;
+    text-decoration-style: none;
+    color: white;
+    background-color: black;
+}
+
+nav>a:hover{
+    background-color: gray;
 }
 
 .banner-container {
     height: 350px;
     width: 100%;
     border: 1px solid;
+}
+
+.banner-container h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.banner-container p {
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: -1rem;
 }
 
 .profile-content {
@@ -48,6 +73,7 @@ nav>a{
 .profile-icon {
     height: 50px;
     width: 50px;
+    border: 0.05px solid black;
 
     /* for image icon */
     border-radius: 50%;
@@ -55,17 +81,60 @@ nav>a{
 }
 
 .profile-1 {
-    background-image: url('https://fastly.picsum.photos/id/961/200/300.jpg?hmac=rshb15adr3WtZi83bW54uoTd2m0FuSCNwtfD74RJY0k');
+    background-image: url('../assets/Merdeka_Square_Monas_02.jpg');
 }
 
 .profile-2 {
-    background-image: url('https://fastly.picsum.photos/id/961/200/300.jpg?hmac=rshb15adr3WtZi83bW54uoTd2m0FuSCNwtfD74RJY0k');
+    background-image: url('../assets/Tugukujang.jpg');
 }
 
 .profile-3 {
-    background-image: url('https://fastly.picsum.photos/id/961/200/300.jpg?hmac=rshb15adr3WtZi83bW54uoTd2m0FuSCNwtfD74RJY0k');
+    background-image: url('../assets/Gedung-Sate-Trees.jpg');
+}
+
+.profile-4 {
+    background-image: url('../assets/Patung_Sura_dan_Baya.jpg');
+}
+
+.service-1 {
+    background-image: url('../assets/it-consultant.jpg');
+}
+
+.service-2 {
+    background-image: url('../assets/software.jpg');
+
+}
+
+.service-3 {
+    background-image: url('../assets/server-datacenter.jpg');
+}
+
+.service-4 {
+    background-image: url('../assets/ai.jpg');
+
 }
 
 .divider {
     flex: 1;
 }
+
+#our-profile {
+    height: 350px;
+    width: 100%;
+    border: 1px solid;
+}
+
+#our-profile header {
+    margin-left: 3rem;
+}
+
+#our-headquarter {
+    height: 350px;
+    width: 100%;
+    border: 1px solid;
+}
+
+#our-headquarter header {
+    margin-left: 3rem;
+}
+
