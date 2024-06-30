@@ -138,3 +138,28 @@ nav>a:hover{
     margin-left: 3rem;
 }
 
+#message-us {
+    height: 350px;
+    width: 100%;
+    border: 1px solid;
+}
+
+#message-us header {
+    margin-left: 3rem;
+}
+
+footer {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: initial;
+}
+
+footer p {
+    text-align: center;
+}
+
+.input-4 label{
+    margin-bottom: 6rem;
+}
