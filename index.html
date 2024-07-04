@@ -167,7 +167,7 @@
                     <br>
                     <br>
                     <input type="button" value="Click Me" id="btn1">
-                    <p id="error-name"></p>
+                    <p id="error-page"></p>
                     </form>
                 </div>
                 <div class="profile-item">
@@ -195,7 +195,7 @@
         const gender = document.forms['message-form']['gender'].value;
         const message = document.forms['message-form']['message'].value;
 
-        if (name.value == "" && birthday.value == "" && gender.value == "" && message.value == "") {
+        if (name == "" && birthday == "" && gender == "") {
         document.getElementById("error-name").innerHTML = "Tidak boleh kososng!"
 
         return false
