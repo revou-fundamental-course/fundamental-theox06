@@ -36,7 +36,7 @@ main {
     background-size: cover;
     background-image: url('../assets/T__1_-removebg-preview.png');
 }
-
+/* end logo */
 
 /* Bagian navbar */
 nav#myNav.my-nav {
@@ -116,6 +116,64 @@ a.icon {
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 
 }
+
+.nav-style {
+    overflow: hidden;
+    background-color: black;
+}
+
+.nav-responsive {
+    display: flex;
+    overflow: hidden;
+    background-color: black;
+    margin-top: 0.35rem;
+    margin-left: 2rem;
+}
+
+.nav-responsive a {
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+
+}
+
+.nav-responsive .icon {
+    display: none;
+}
+
+.nav-responsive a:hover {
+    color: gray;
+}
+
+.nav-style a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-style a:hover {
+    color: gray;
+}
+
+.icon {
+    display: none;
+}
+
+.icon a {
+    text-decoration: none;
+    color: white;
+}
+
+.icon:hover {
+    background-color: gray;
+}
+
+/* end navbar */
 
 .banner-container h1 {
     text-align: center;
@@ -270,62 +328,8 @@ footer i {
 }
 
 
-.nav-style {
-    overflow: hidden;
-    background-color: black;
-}
 
-.nav-responsive {
-    display: flex;
-    overflow: hidden;
-    background-color: black;
-    margin-top: 0.35rem;
-    margin-left: 2rem;
-}
-
-.nav-responsive a {
-    text-decoration: none;
-    float: left;
-    text-align: center;
-    padding: 14px 16px;
-    color: white;
-
-}
-
-.nav-responsive .icon {
-    display: none;
-}
-
-.nav-responsive a:hover {
-    color: gray;
-}
-
-.nav-style a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.nav-style a:hover {
-    color: gray;
-}
-
-.icon {
-    display: none;
-}
-
-.icon a {
-    text-decoration: none;
-    color: white;
-}
-
-.icon:hover {
-    background-color: gray;
-}
-
+/* bagian autoslider */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -363,8 +367,10 @@ footer i {
     position: absolute;
     top: 0;
 }
-  
+/* end autoslider */
 
+  
+/* bagian responsive */
 @media screen and (max-width: 600px) {
     .nav-responsive a:not(:first-child) {
         display: none;
@@ -427,5 +433,5 @@ footer i {
         margin: 0 auto 0 384px;
     }
 }
-
+/* bagian responsive */
 
