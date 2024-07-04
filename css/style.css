@@ -1,7 +1,9 @@
 /* Ini CSS */
 
+/* body */
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
 main {
@@ -9,43 +11,110 @@ main {
 }
 
 
+/* nav */
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
+    background-color: #3B71CA;
+    padding: 0.06rem;
+    height: 100%;
+    width: 100%;
 }
 
+
+/* logo */
 .logo-icon {
     height: 50px;
     width: 50px;
     /* border: 1px solid; */
     /* flex: 1; */
-    /* text-align: -webkit-center; */
+    text-align: -webkit-center;
 
     /* for image icon */
-    background-image: url("../assets/thg_logo.png");
     border-radius: 50%;
     background-size: cover;
+    background-image: url('../assets/T__1_-removebg-preview.png');
 }
 
-nav>a{
-    padding-left: 32px;
-    padding-right: 32px;
-    border: 1px solid;
+
+/* Bagian navbar */
+nav#myNav.my-nav {
+    margin: 0px 3px 0px auto;
+    float: left;
+    display: block;
+}
+
+nav>a {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
     text-decoration: none;
-    text-decoration-style: none;
+    font-size: 17px;
+    overflow: hidden;
     color: white;
     background-color: black;
+    border: 0.1px solid;
+}
+
+.icon {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    overflow: hidden;
+    color: white;
+    background-color: black;
+    border: 0.1px solid;
+}
+
+.icon {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    overflow: hidden;
+    color: white;
+    background-color: black;
+    border: 0.1px solid;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+
+.nav-container .mynav a {
+    margin: 0px 3px 0px auto;
+    float: left;
+    display: block;
+}
+nav a {
+    align-items: center;
 }
 
 nav>a:hover{
     background-color: gray;
 }
 
+a.icon {
+    /* display: none; */
+}
+
 .banner-container {
-    height: 350px;
-    width: 100%;
-    border: 1px solid;
+    /* height: 100%;
+    width: 100%; */
+    /* border: 1px solid; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+
 }
 
 .banner-container h1 {
@@ -54,20 +123,50 @@ nav>a:hover{
     font-size: 2rem;
 }
 
-.banner-container p {
+.banner-container {
     text-align: center;
     text-transform: capitalize;
     margin-top: -1rem;
 }
 
+.banner-container .identity-container {
+    text-align: left;
+    padding: 5rem;
+    padding-right: 8rem;
+    text-align: center;
+}
+
+.profile-content h1 {
+    margin-left: 3rem;
+}
+
 .profile-content {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .profile-item {
     flex: 1;
-    text-align: -webkit-center;
+    /* text-align: -webkit-center; */
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 14px 18px;
+    display: inline;
+}
+
+.profile-item li {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.profile-item a {
+    list-style-type: none;
+    color: black;
+}
+
+.profile-item img {
+    width: 100%;
 }
 
 .profile-icon {
@@ -115,17 +214,17 @@ nav>a:hover{
 }
 
 .divider {
-    flex: 1;
+    flex: 2;
 }
 
 #our-profile {
     height: 350px;
     width: 100%;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 #our-profile header {
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
 }
 
 #our-headquarter {
@@ -148,18 +247,185 @@ nav>a:hover{
     margin-left: 3rem;
 }
 
+.message-us .input-1 {
+    margin-right: 4rem;
+}
+
 footer {
     height: 100%;
     width: 100%;
     background-color: black;
     color: white;
-    position: initial;
+    padding: 0.06rem;
+    /* margin-top : 1rem; */
 }
 
 footer p {
     text-align: center;
 }
 
-.input-4 label{
-    margin-bottom: 6rem;
+footer i {
+    /* margin: 8rem; */
+    margin-right: 32px;
 }
+
+
+.nav-style {
+    overflow: hidden;
+    background-color: black;
+}
+
+.nav-responsive {
+    display: flex;
+    overflow: hidden;
+    background-color: black;
+    margin-top: 0.35rem;
+    margin-left: 2rem;
+}
+
+.nav-responsive a {
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+
+}
+
+.nav-responsive .icon {
+    display: none;
+}
+
+.nav-responsive a:hover {
+    color: gray;
+}
+
+.nav-style a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-style a:hover {
+    color: gray;
+}
+
+.icon {
+    display: none;
+}
+
+.icon a {
+    text-decoration: none;
+    color: white;
+}
+
+.icon:hover {
+    background-color: gray;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+
+@media screen and (max-width: 600px) {
+    .nav-responsive a:not(:first-child) {
+        display: none;
+    }
+    .profile-content {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 350px;
+        height: 100%;
+    }
+    /* nav>a.icon {
+        float: right;
+        display: block;
+        border-left: 3px solid;
+    } */
+    nav#myNav.my-nav {
+        display: none;
+    }
+    /* nav>a.icon {
+        float: right;
+        display: block;
+        border-left: 3px solid;
+    } */
+    nav#myNav.my-nav a.icon {
+        float: right;
+        display: inline;
+        border-left: 3px solid;
+    }
+    a.icon {
+        float: right;
+        display: block;
+        border: 3px solid;
+        margin: 0px auto 0px 28px;
+    }
+    
+
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    .my-nav.responsive {
+        position: absolute;
+    }
+    .my-nav.responsive .icon {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    .my-nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .icon {
+        float: right;
+        display: block;
+        border: 3px solid;
+        margin: 0 auto 0 384px;
+    }
+}
+
+

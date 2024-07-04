@@ -4,41 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Theo</title>
+    <!-- external css -->
     <link rel="stylesheet" href="css/style.css">
 
     <!-- ini google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- nav -->
     <header class="nav-container">
         <div class="logo-icon"></div>
-
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#our-profile">Our Profile</a>
-            <a href="#our-headquarter">Our Headquarter</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#message-us">Message Us</a>
+        <nav id="myNav" class="my-nav">
+            <a href="index.html">Home</a>
+            <a href="#profile">Profile</a>
+            <a href="#portfolio">Project</a>
+            <a href="#contact">Contact Me</a>
+            <a href="#msg">Sent a Message</a>
+            
+            
         </nav>
+        <div class="icon">
+            <a href="javascript:void(0);" onclick="myFunction()">Menu</a>
+            <div class="dropdown-content"></div>
+        </div>
+        
     </header>
-    <hr />
+    <!-- <hr /> -->
 
     <main>
         <!-- Ini Home Content -->
-         <section id="home">
+         <section id="profile">
             <header>
-                <h1>Hi User, Welcome to Website</h1>
+                <h1>Hi <span class="userName" id="userName">User</span>, Welcome to My Website</h1>
             </header>
 
             <article>
-                <p>Ini adalah website portfolio saya</p>
+                <p>Ini adalah contoh website saya</p>
+
 
                 <div class="banner-container">
-                    <h1>Welcome to Tristar Holding Group</h1>
-                    <p>giving the best is our priority</p>
+                    <div class="mySlides fade">
+                        <!-- <div class="numbertext">1 / 3</div> -->
+                        <img src="assets/Gedung-Sate-Trees.jpg" style="width:380px; height: 280px;">
+                    </div>
+                <!-- </div> -->
+
+                <!-- <div class="banner-container"> -->
+                    <div class="mySlides fade">
+                        <!-- <div class="numbertext">2 / 3</div> -->
+                        <img src="assets/ai.jpg" style="width:380px; height: 280px;">
+                    </div>
                 </div>
+
+                
+
+                <div style="text-align:center;">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <!-- <span class="dot"></span> -->
+                  </div>
+<!-- 
+                <div class="banner-container">
+                    <img src="assets/ai.jpg" alt="" width="20%">
+                </div> -->
             </article>
 
         </section>
@@ -46,32 +79,33 @@
         <br />
 
         <!-- Ini Our Profile Content -->
-         <section id="our-profile">
+         <section id="portfolio">
             <header>
-                <h1>Our Profile</h1>
-                <p>we serve IT services such as :</p>
+                <h1>My Portfolio (Project)</h1>
             </header>
 
             <article class="profile-content">
-                <div class="profile-item">
-                    <div class="profile-icon service-1"></div>
-                    <p>IT Consultant</p>
+                <div class="profile-item" style="width: 500px;">
+                    <img src="assets/project3.png" alt="" style="width: 40%; margin: 0px auto 2px;">
+                    <h1>Guess Number Game (Super Mario Theme)</h1>
+                    <a href="" style="list-style-type: none; color: black;">Source Code</a> 
+                    <a href="" style="list-style-type: none; color: black;">Live Preview</a>
                 </div>
-
-                <div class="profile-item">
-                    <div class="profile-icon service-2"></div>
-                    <p>Web/Software Dev And Engineer</p>
+                <div class="profile-item" style="width: 500px;">
+                    <img src="assets/portfolio_1.0.png" alt="" style="width: 40%; margin: 0px auto 2px;">
+                    <h1>Portfolio 1.0</h1>
+                    <a href="" style="list-style-type: none; color: black;">Source Code</a> 
+                    <a href="" style="list-style-type: none; color: black;">Live Preview</a>
                 </div>
-
-                <div class="profile-item">
-                    <div class="profile-icon service-3"></div>
-                    <p>Server and Data Center</p>
+                <!-- <div class="profile-item">
+                    <img src="" alt="">
+                    <h1>My First Portfolio</h1>
                 </div>
-
                 <div class="profile-item">
-                    <div class="profile-icon service-4"></div>
-                    <p>AI Dev and Engineer</p>
-                </div>
+                    <img src="" alt="">
+                    <h1>My First Portfolio</h1>
+                </div> -->
+                
 
                 <div class="divider"></div>
             </article>
@@ -80,74 +114,151 @@
          <br />
 
          <!-- Ini headquarter content -->
-         <section id="our-headquarter">
+         <section id="our-profile">
             <header>
-                <h1>Our Headquarter</h1>
+                <h1>About Me</h1>
             </header>
 
             <article class="profile-content">
                 <div class="profile-item">
-                    <div class="profile-icon profile-1"></div>
-                    <p>Jakarta</p>
-                </div>
-
-                <div class="profile-item">
-                    <div class="profile-icon profile-2"></div>
-                    <p>Bogor</p>
-                </div>
-
-                <div class="profile-item">
-                    <div class="profile-icon profile-3"></div>
-                    <p>Bandung</p>
-                </div>
-
-                <div class="profile-item">
-                    <div class="profile-icon profile-4"></div>
-                    <p>Surabaya</p>
+                    <p>Name : Theo Ginting</p>
+                    <p>Age : 17 Years old</p>
+                    <p>Grade : 12th grade</p>
+                    <ol>
+                        <li><a href="https://instagram.com/theoximperion06" onclick="window.location.href('')"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    </ol>
                 </div>
 
                 <div class="divider"></div>
             </article>
-        </section>
+         </section>
 
         <br/>
 
         <!-- Ini Portfolio Content -->
 
         <!-- Ini Message Us Content -->
-         <section id="message-us">
+        <section id="contact">
             <header>
-                <h1>Message Us</h1>
+                <h1>Contact Me</h1>
             </header>
 
-            <article class="message-us">
-                <div class="input-1">
-                    <label for="">Name :</label>
-                    <input type="text" name="" id="">
+            <article class="profile-content">
+                <div class="profile-item">
+                    <br>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                    <br>
+                    <br>
+                    <label for="Birthdate">Birthdate:</label>
+                    <input type="date" name="birthdate" id="birthdate" required>
+                    <br>
+                    <br>
+                    <label for="gender">Gender :</label>
+                    <br>
+                    <input type="radio" name="gender" value="male" id="gender" required>Male
+                    <input type="radio" name="gender" value="female" id="gender" required>Female
+                    <br>
+                    <br>
+                    <label for="message">Message :</label>
+                    <textarea name="message" id="message" required></textarea>
+                    <br>
+                    <br>
+                    <input type="button" value="Click Me" id="btn1">
+                </div>
+                <div class="profile-item">
+                    <p class="output" id="output1"></p>
+                    <p class="output" id="output2"></p>
+                    <p class="gender" id="output3"></p>
+                    <p class="message" id="output4"></p>
                 </div>
 
-                <div class="input-2">
-                    <label for="">Birthdate :</label>
-                    <input type="date" name="" id="">
-                </div>
-
-                <div class="input-3">
-                    <label for="">Gender :</label>
-                    <input type="radio" name="" id="">Male
-                    <input type="radio" name="" id="">Female
-                </div>
-
-                <div class="input-4">
-                    <label for="">Message :</label>
-                    <textarea name="" id=""></textarea>
-                </div>
+                <div class="divider"></div>
             </article>
          </section>
     </main>
-
     <footer>
-        <p>&copy; 2024 Tristar Holdings Group. All right reserved</p>
+        <p>&copy; 2024 Theo Ginting. All right reserved</p>
+        
     </footer>
-    
+
+    <script>
+        const txt1 = document.getElementById('name');
+        const txt2 = document.getElementById('birthdate');
+        const txt3 = document.getElementById('gender');
+        const txt4 = document.getElementById('message')
+        const btn1 = document.getElementById('btn1');
+        const out1 = document.getElementById('output1');
+        const out2 = document.getElementById('output2');
+        const out3 = document.getElementById('output3');
+        const out4 = document.getElementById('output4');
+
+        function fun1() {
+            out1.innerHTML = "Name : " + txt1.value;
+            out2.innerHTML = "Birthdate : " + txt2.value;
+            out3.innerHTML = "Gender : " + txt3.value;
+            out4.innerHTML = "Message : " + txt4.value;
+        }
+
+        function fun2() {
+            
+        }
+
+        function fun3() {
+            
+        }
+
+        function fun4() {
+            
+        }
+
+        btn1.addEventListener('click', fun1);
+
+        // username validation
+        const txtName = prompt('please input your name');
+        const txtUser = getElementById('userName');
+
+        function replaceName() {
+            txtUser.innerHTML = txtName.value;
+        }
+
+
+        // navbar
+        function myFunction() {
+        var x = document.getElementById("myNav");
+
+        if (x.className === "my-nav") {
+        x.className += "responsive";        
+        } else {
+        x.className = "my-nav";
+        }
+    }
+
+    // autoslider
+    function showSlides() {
+        document.getElementsByClassName('banner-item')[0].style.display = 'none';
+    }
+
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+     }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+    </script>
 </body>
 </html>
