@@ -146,7 +146,8 @@
 
             <article class="profile-content">
                 <div class="profile-item">
-                    <br>
+                <form action="" name="messageform-" onsubmit="validateForm()">
+                        <br>
                     <label for="name">Name:</label>
                     <input type="text" name="name" id="name" required>
                     <br>
@@ -166,6 +167,8 @@
                     <br>
                     <br>
                     <input type="button" value="Click Me" id="btn1">
+                    <p id="error-name"></p>
+                    </form>
                 </div>
                 <div class="profile-item">
                     <p class="output" id="output1"></p>
@@ -184,6 +187,30 @@
     </footer>
 
     <script>
+
+        // validation
+        function validateForm () {
+        const name = document.forms['message-form']['name'].value;
+        const birthday = document.forms['message-form']['birthday'].value;
+        const gender = document.forms['message-form']['gender'].value;
+        const message = document.forms['message-form']['message'].value;
+
+        if (name.value == "" && birthday.value == "" && gender.value == "" && message.value == "") {
+        document.getElementById("error-name").innerHTML = "Tidak boleh kososng!"
+
+        return false
+    }
+
+    // document.getElementById("name").innerHTML = name;
+    // document.getElementById("error-name").innerHTML = "";
+    setName(name)
+
+    return false
+
+
+}
+
+        // username input
         const txt1 = document.getElementById('name');
         const txt2 = document.getElementById('birthdate');
         const txt3 = document.getElementById('gender');
